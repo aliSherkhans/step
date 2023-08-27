@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image project</title>
+</head>
+<style>
+    .style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0
+    }
+</style>
+<body>
+    
+<img src="Google.png" alt="hello" id="image" class="style"/>
+    
+</body>
+<script>
+    let img = document.getElementById("image");
+let height = 10;
+let width = 10;
+let flag = true;
+setInterval(() => {
+  if (flag && height <= 100) {
+    height += 10;
+    width += 10;
+    if (height == 100) {
+      flag = false;
+    }
+  } else {
+    height -= 10;
+    width -= 10;
+    if (height == 0) {
+      flag = true;
+    }
+  }
+  img.style.height = `${height}%`
+  img.style.width = `${width}%`;
+}, 1000);
+</script>
+</html>
