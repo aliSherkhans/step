@@ -1,25 +1,30 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+  .styles{
+    font-size: 20px;
+    width: 10%;
+    height: 100px;
+    background-color:tomato;
+    border-radius: 10px;
+    border: white;
+    font-weight: 700;
+  }
+</style>
 <body>
-  <h3>Welcome To SBI</h3>
-  <p>Account number = 12345</p>
-  <div style="display: flex;">
-  <p>cruntbalence =  &nbsp;</p>
-  <p id="balance">12345</p>
+  <p align="center">Welcome To SBI</p>
 </div>
-<p id="password">your frist time password 1234</p>
-
-<div style="margin-left: 30%;">
-    <button id="whithdrol" style="font-size: 10px;width: 50px;height: 100px;background-color:tomato;border-radius: 10px;border: white;">withdrol</button><br>
-    <button id="deposite" style="font-size: 10px;width: 50px;height: 100px;background-color:green;border-radius: 10px;border: white;">Diposite</button><br>
-    <button id="transfer" style="font-size: 10px;width: 50px;height: 100px;background-color:yellow;border-radius: 10px;border: white;">Transfer</button><br>
-    <button id="changePin" style="font-size: 6px;width: 50px;height: 100px;background-color:violet;border-radius: 10px;border: white;">change pin</button>
+<div class="row" style="margin-left: 30%;">
+    <button class="styles" id="whithdrol" >withdrol</button>
+    <button class="styles" id="deposite" style="background-color:green;">Diposite</button>
+    <button class="styles" id="transfer" style="background-color:yellow;">Transfer</button>
+    <button class="styles" id="changePin" style="background-color:violet;">changepin</button>
 </div>
 <script src="index.js"></script>
 </body>
-</html>
+</html> 
