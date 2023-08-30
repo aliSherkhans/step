@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>javascript</title>
+</head>
+<body>
+   <button id="one" onclick="sum(1)">one</button>
+   <button id="two" onclick="sum(2)">two</button>
+   <button id="three" onclick="sum(3)">three</button>
+   <button id="four" onclick="sum(4)">four</button>
+<script>
+   let sm = 0;
+function sum(num) {
+  sm = sm + num;
+  alert(sm);
+}
+</script>
+</body>
+</html>
+
+                                                    <!-- calculater -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body style="text-align: center;" background="black">
+   input1 : <input type="text" name="" id="input1" /> <br/>
+   input2 : <input type="text" name="" id="input2" /><br />
+   answer:
+   <p id="massege"></p>
+   <button id="add" type="button"onclick="calculate('+')">Add</button>
+   <button id="sub" type="button"onclick="calculate('-')">Sub</button>
+   <button id="mul" type="button"onclick="calculate('*')">Mul</button>
+   <button id="div" type="button"onclick="calculate('/')">Div</button>
+   <script src="index.js"></script>
+   </body>
+</html> 

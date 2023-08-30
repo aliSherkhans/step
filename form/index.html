@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        div {
+        box-sizing: border-box;
+        width: 100px;
+        border: 100px solid black;
+        float: left;
+        align-content: center;
+        align-items: center;
+        background-color: cadetblue;
+        }
+        form {
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+<body style="margin: 100px;">
+<h1 style="text-align: center">REGISTRATION FORM</h1>
+<form name="RegForm" onsubmit="return validate()">
+  <p>
+    <h2>Select your favorite Subjects:</h2>
+ <label>
+     <input type="radio" name="Subject" value="Mathematics"> Methematics
+ </label>
+ <label>
+     <input type="radio" name="Subject" value="chemistry"> chemistry
+ </label>
+ <label>
+     <input type="radio" name="Subject" value="Physics"> Physics
+ </label>
+ <label>
+     <input type="radio" name="Subject" value="biology"> biology
+ </label>
+ <br>
+    <p>
+        Name: 
+        <input type="text" name="Name" required>
+    </p><br>
+   <p>
+    Age: 
+    <input type="number" name="Age" >
+   </p><br>
+   <p>
+    Address:
+    <input type="text" name="Address" />
+  </p>
+  <br />
+  <p>
+    E-mail Address:
+    <input type="text" name="EMail" />
+  </p>
+  <br />
+  <p>
+    Password:
+    <input type="password" name="Password" />
+  </p>
+  <br>
+   SELECT YOUR COURSE 
+  <select type="text" value="" name="Subject" required>
+    <option value="">---select---</option>
+    <option>BSC</option>
+    <option>MSC</option>
+    <option>12th</option>
+    <option>11th</option>
+  </select>
+<br>
+<br>
+ <button type="button" onclick="validate()" >Submit</button>
+  <button type="reset">Reset</button>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
