@@ -1,0 +1,19 @@
+[{
+"id":1,
+"name" : "soyal ",
+"address" : "jaipur",
+"contect" : "soyall@gmail.com"
+},
+{
+"id":2,
+"name" : "komalmuskan",
+"address" : "ladnun",
+"contect" : "komalmuskan@gmail.com"
+},
+{
+"id":3,
+"name" : "sameer",
+"address" : "sujanghar",
+"contect" : "sameer@gmail.com"
+}
+]
