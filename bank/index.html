@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <h1>Bank Account</h1>
+    <div>
+      <label for="pin">Enter PIN: </label>
+      <input type="password" id="pin" />
+      <button onclick="checkPin()">Submit</button>
+    </div>
+    <div id="accountDetails" style="display: none">
+      <h2>Account Details</h2>
+      <p id="accountHolderName">Account Holder Name:</p>
+      <p id="accountType">Account Type:</p>
+      <p id="aadharCardNumber" style="display: none">Aadhar Card Number:</p>
+      <p id="currentBalance">Current Balance:</p>
+      <button onclick="withdrawal()">Withdrawal</button
+      ><!--Char function ke liye char button banaye aur unneh button se call kiya-->
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="printStatement()">Print Statement</button>
+      <button onclick="changePin()">Change PIN</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
