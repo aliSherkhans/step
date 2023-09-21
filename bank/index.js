@@ -83,13 +83,7 @@ function checkPin() {
   const pinInput = document.getElementById("pin");
   const enteredPin = pinInput.value;
 
-  currentAccount = new Account(
-    "Alisher Khan",
-    "Savings",
-    "37043555596",
-    "9649287338",
-    "1212"
-  );
+  
 
   if (enteredPin === currentAccount._pin) {
     pinInput.value = "";
@@ -170,3 +164,19 @@ function changePin() {
     alert("Incorrect PIN. PIN change failed.");
   }
 }
+
+
+currentAccount = new Account(
+  "Alisher Khan",
+  "Savings",
+  "37043555596",
+  "9649287338",
+  "1212"
+);
+currentAccount = new Account(
+  "sameer Khan",
+  "Savings",
+  "370435555",
+  "9649287",
+  "1221"
+);
